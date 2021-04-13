@@ -18,9 +18,7 @@
 
 
 ### Running Application Via Docker
-* Execute the commands below from the root directory of this project to run this application using `Docker`
-
-<img src="./how-to-run-dockerized-application.gif">
+* Execute the commands below from the root directory of this project to run this application using `Docker` or leverage the `build-application.sh` script.
 
 ```bat
 cd front-end
@@ -30,6 +28,9 @@ mvn package
 docker image build -t springsecurity-jekyll .
 docker container run --name springsecurity-jekyll-container -p 8081:8080 -d springsecurity-jekyll
 ```
+
+<img src="./how-to-run-dockerized-application.gif">
+
 
 ## How to Download
 
