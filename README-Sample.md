@@ -17,6 +17,18 @@
   * `mvn spring-boot:run`
 
 
+### Running Application Via Docker
+* Execute the commands below from the root directory of this project to run this application using `Docker`
+
+```bat
+cd front-end
+bundle exec jekyll build
+cd ..
+mvn package
+docker image build -t springsecurity-jekyll .
+docker container run --name springsecurity-jekyll-container -p 8081:8080 -d springsecurity-jekyll
+```
+
 ## How to Download
 
 #### Part 1 - Forking the Project
