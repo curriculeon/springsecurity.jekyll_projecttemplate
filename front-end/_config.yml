@@ -1,4 +1,6 @@
 # Where things are
+theme: jekyll-theme-cayman
+
 source              : .
 destination         : ./../src/main/resources/static
 collections_dir     : .
@@ -29,7 +31,8 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : []
+plugins:
+  - jekyll-seo-tag
 
 # Conversion
 markdown            : kramdown
