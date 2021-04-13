@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>springboot-jsp-login-page</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>Curriculeon SpringBoot JSP Login Page</name>
     <description>Demo project for Spring Boot With Login JSP View</description>
     <parent>
@@ -65,6 +65,15 @@
         </dependency>
     </dependencies>
     <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <attachClasses>true</attachClasses>
+                </configuration>
+            </plugin>
+        </plugins>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
