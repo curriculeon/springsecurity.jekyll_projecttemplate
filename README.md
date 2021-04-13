@@ -20,6 +20,8 @@
 ### Running Application Via Docker
 * Execute the commands below from the root directory of this project to run this application using `Docker`
 
+<img src="./how-to-run-dockerized-application.gif">
+
 ```bat
 cd front-end
 bundle exec jekyll build
