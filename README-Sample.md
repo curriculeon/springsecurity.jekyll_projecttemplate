@@ -7,7 +7,7 @@
 
 
 ## Instructions
-
+* TLDR: `./build-application.sh`
 ### Generating Web Application
 * From the `./front-end` directory, execute the command below to generate and inject the static `HTML` and `CSS` content into the `./src/main/resources` directory
   * `bundle exec jekyll build`
